@@ -23,14 +23,13 @@ const cinema = [
 ];
 const wrapWithTag = (content, tagname) => `<${tagname}>${content}</${tagname}>`;
 
+const cinemaReverse = cinema.reverse();
+
 const lowerCaseCinema = cinema.map(cinema => cinema.toLowerCase());
 
-document.write(`<ul>`);
-lowerCaseCinema.forEach(cinema => document.write(wrapWithTag(cinema, `li`)));
-document.write(`</ul>`);
+lowerCaseCinema.forEach(cinemaReverse => document.write(wrapWithTag(cinemaReverse)));
 
 
-  
 
 
   
