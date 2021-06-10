@@ -8,12 +8,11 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-let age = prompt("What is your age ?")
-let gender = prompt("What is your gender (i had to ask sorry :( ) ?")
-let town = prompt("What town do you live in ?")
-
+var age = window.prompt("Please enter your age", "666");
+var gender = window.prompt("What is your gender ?");
+var town = window.prompt("in what town do you live ?");
 
 (function myFunction() {
-    console.log("You are", age , " years and identify yourself as", gender , "! You live in", town )
-    alert(confirm("please confirm !"));
+    confirm(alert("you are " + age + " years old. Do you like beeing " + gender + " gender ? And  do you like living in " + town + " ?"));
+
 })();
