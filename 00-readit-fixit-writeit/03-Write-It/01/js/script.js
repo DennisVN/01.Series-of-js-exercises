@@ -1,7 +1,7 @@
 const cinemaCurrent = [
     `The Conjuring 3`,
     `Voyagers`,
-    `Tom&Jerery`,
+    `Tom&Jerry`,
     `Cruella`,
     `Demon Slayer`,
     `Freaky`,
@@ -22,13 +22,11 @@ const cinemaCurrent = [
     `The Sining Club` ,
   ];
   
-  const wrapWithTag = (content, tagname) => `<${tagname}>${content}</${tagname}>`;
+  for (let i = 0; i < cinemaCurrent.length; i++) {
+    document.write(`<li>${cinemaCurrent[i]}</li>`);
+  }
 
-  const lowerCasecinemaCurrent = cinemaCurrent.map(cinemaCurrent => cinemaCurrent.toLowerCase());
-  
-  document.write(`<ul>`);
-  lowerCasecinemaCurrent.forEach(cinemaCurrent => document.write(wrapWithTag(cinemaCurrent, `li`)));
-  document.write(`</ul>`);
+
   
 
 
