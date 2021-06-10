@@ -11,7 +11,5 @@
 var hallookes = "Hello, World!";
 
 (function() {
-
     (document.write(alert(hallookes)));
-
 })();
