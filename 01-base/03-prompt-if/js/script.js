@@ -8,9 +8,17 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+var cake;
+var cake1="yes";
+cake = prompt('Would you like some cake ? [yes/no]');
+
 
 (function() {
-
-  // your code here
+  
+if (cake == cake1){ 
+  alert('congratulations, very cool !');
+} else { 
+  alert("More cake for me then :p !");
+};
 
 })();
