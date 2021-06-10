@@ -13,6 +13,11 @@ var gender = window.prompt("What is your gender ?");
 var town = window.prompt("in what town do you live ?");
 
 (function myFunction() {
-    confirm(alert("you are " + age + " years old. Do you like beeing " + gender + " gender ? And  do you like living in " + town + " ?"));
-
+    confirm("you are " + age + " years old. Do you like beeing " + gender + " gender ? And  do you like living in " + town + " ?");
+    if (confirm()) {
+        txt = "wrong answer bozo";
+    } 
+        else {
+        document.write("nope");
+    } 
 })();
