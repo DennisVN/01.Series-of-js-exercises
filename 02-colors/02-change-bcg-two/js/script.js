@@ -12,5 +12,9 @@
 (function() {
 
     // your code here
+    
+    //TODO: get the value of the input
+
+    //TODO: use value as background color. 
 
 })();
