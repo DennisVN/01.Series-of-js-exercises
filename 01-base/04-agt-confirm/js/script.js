@@ -8,16 +8,18 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-var age = window.prompt("Please enter your age", "666");
-var gender = window.prompt("What is your gender ?");
-var town = window.prompt("in what town do you live ?");
+var username = prompt ( "what is your name ?");
+var gender = prompt ( "what is your gender ?");
+var town = prompt ( "what is the name of your home town ?");
+
+var infoCorrect= confirm(" Your name is " + username + ", you are " + gender + "gender, and you live in " + town + " ! ");
 
 (function myFunction() {
-    confirm("you are " + age + " years old. Do you like beeing " + gender + " gender ? And  do you like living in " + town + " ?");
-    if (confirm()) {
-        txt = "wrong answer bozo";
-    } 
-        else {
-        document.write("nope");
-    } 
+    if (infoCorrect === false) {
+        username = prompt("what is your name ?");
+        gender = prompt ( "what is your gender ?");
+        town = prompt ( "what is the name of your home town ?");
+    } else {
+        infoCorrect = confirm( "Is the info correct ? Please confirm by pressing OK ");
+    }   
 })();
