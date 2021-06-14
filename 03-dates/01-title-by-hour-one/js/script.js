@@ -9,6 +9,14 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 (function() {
-
-
+    let date = new Date();
+    let hour = date.getHours();
+    let target = document.getElementById('target');
+    if (hour < 18){
+        target.innerHTML = 'Hello'
+        console.log(date, hour);
+    } else {
+        target.innerHTML = 'Good evening'
+        console.log(date, hour);
+    }
 })();
