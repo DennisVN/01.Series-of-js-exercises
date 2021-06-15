@@ -23,6 +23,12 @@ var result;
 
             case "substraction": result = +num1 - +num2;
             break;
+
+            case "multiplication": result = +num1 * +num2;
+            break;
+
+            case "division": result = +num1 / +num2;
+            break;
         }
         console.log(result);
     };
@@ -30,7 +36,6 @@ var result;
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
         $btn.addEventListener("click", function() {
             performOperation($btn.id);
-            console.log($btn);
         });
     });
 })();
