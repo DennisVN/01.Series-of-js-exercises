@@ -10,14 +10,18 @@
 // You will have time to focus on it later.
 var num1 = document.getElementById("op-one").value;
 var num2 = document.getElementById("op-two").value;
-var result = document.getElementById("").value;
+
 
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("addition").addEventListener("click", function() {
         // perform an addition
-        var op = (document.getElementById("op-one" + "op-two").value);
+        function addition (){
+            num1 = parseInt(document.getElementById("op-one"));
+            num2= parseInt(document.getElementById("op-two"));
+        }
+        eventlistener(addition(alert(num1 + num2)));
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
