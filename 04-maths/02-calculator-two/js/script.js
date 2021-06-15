@@ -8,12 +8,15 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
+var num1 = document.getElementById("op-one").value;
+var num2 = document.getElementById("op-two").value;
 
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
 
     var performOperation = function(operation) {
         // perform the operation
+
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
