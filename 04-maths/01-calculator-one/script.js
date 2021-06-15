@@ -21,7 +21,7 @@ var num2 = document.getElementById("op-two").value;
             num1 = parseInt(document.getElementById("op-one"));
             num2= parseInt(document.getElementById("op-two"));
         }
-        addition.eventlistener(addition(alert(num1 + num2 )));
+        return(alert(parseInt(+num1 + +num2)));
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
@@ -30,7 +30,7 @@ var num2 = document.getElementById("op-two").value;
             num1 = parseInt(document.getElementById("op-one"));
             num2= parseInt(document.getElementById("op-two"));
         }
-        addition.eventlistener(addition(alert(num1 - num2 )));
+        return(alert(num1 - num2 ));
        
     });
 
@@ -40,7 +40,7 @@ var num2 = document.getElementById("op-two").value;
             num1 = parseInt(document.getElementById("op-one"));
             num2= parseInt(document.getElementById("op-two"));
         }
-        addition.eventlistener(addition(alert(num1 * num2 )));
+        return(alert(num1 * num2 ));
     });
 
     document.getElementById("division").addEventListener("click", function() {
@@ -50,6 +50,6 @@ var num2 = document.getElementById("op-two").value;
             num1 = parseInt(document.getElementById("op-one"));
             num2= parseInt(document.getElementById("op-two"));
         }
-        addition.eventlistener(addition(alert(num1 / num2 )));
+        return(alert(num1 / num2 ));
     });
 })();
