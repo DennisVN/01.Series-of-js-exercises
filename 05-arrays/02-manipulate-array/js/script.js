@@ -26,7 +26,11 @@
 
     // your code here
     run.onclick = function(){
-        console.log("knappe gast");
+        //TODO: REMOVE THE FIRST AND LAST ELEMENT
+
+        //TODO: ADD ELEMENT "banana" AT THE START OT ARRAY
+
+        //TODO: ADD ELEMENT "kiwi" AT THE END 
     };
 
 })();
