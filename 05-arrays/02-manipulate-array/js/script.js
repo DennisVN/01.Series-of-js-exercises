@@ -27,9 +27,10 @@
     // your code here
     run.onclick = function(){
         //TODO: REMOVE THE FIRST AND LAST ELEMENT
-        console.log(fruits.slice(1, -1));
+        //console.log(fruits.slice(1, -1));//
 
         //TODO: ADD ELEMENT "banana" AT THE START OT ARRAY
+        console.log.toString(fruits.unshift(["banana"]));
 
         //TODO: ADD ELEMENT "kiwi" AT THE END 
     };
