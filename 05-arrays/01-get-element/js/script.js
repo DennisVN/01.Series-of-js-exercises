@@ -27,7 +27,10 @@
     ];
 
     // your code here
-    console.log(fruits[3]);
+    run.onclick = function(){
+        console.log(fruits[3]);
+    };
+    
 
 
 })();
