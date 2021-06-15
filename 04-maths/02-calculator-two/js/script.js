@@ -16,12 +16,13 @@ var num2 = document.getElementById("op-two").value;
 
     var performOperation = function(operation) {
         // perform the operation
-
+        return(alert(parseInt(+num1 + +num2)));
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
         $btn.addEventListener("click", function() {
             performOperation($btn.id);
+            console.log($btn);
         });
     });
 })();
