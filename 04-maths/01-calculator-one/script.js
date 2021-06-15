@@ -21,21 +21,35 @@ var num2 = document.getElementById("op-two").value;
             num1 = parseInt(document.getElementById("op-one"));
             num2= parseInt(document.getElementById("op-two"));
         }
-        addition.eventlistener(addition(alert(num1 + num2)));
+        addition.eventlistener(addition(alert(num1 + num2 )));
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
         // perform an substraction
+        function substraction (){
+            num1 = parseInt(document.getElementById("op-one"));
+            num2= parseInt(document.getElementById("op-two"));
+        }
+        addition.eventlistener(addition(alert(num1 - num2 )));
        
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
         // perform an multiplication
-        
+        function multiplication (){
+            num1 = parseInt(document.getElementById("op-one"));
+            num2= parseInt(document.getElementById("op-two"));
+        }
+        addition.eventlistener(addition(alert(num1 * num2 )));
     });
 
     document.getElementById("division").addEventListener("click", function() {
         // perform an division
         /*var result = x / y;*/
+        function division (){
+            num1 = parseInt(document.getElementById("op-one"));
+            num2= parseInt(document.getElementById("op-two"));
+        }
+        addition.eventlistener(addition(alert(num1 / num2 )));
     });
 })();
