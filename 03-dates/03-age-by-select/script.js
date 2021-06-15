@@ -19,5 +19,7 @@
     // TODO : MAKE AN OBJECT WITH CURRENT BIRTHDATE
     let birthday = new Date(yearElement.value, monthElement.value, dayElement.value);
     console.log(birthday);
-
+    // TODO: CALCULATE THE DIFFERENCE BETWEEN NOW AND BIRTHDATE 
+    var ageDifMs = Date.now() - birthday.getTime();
+    console.log(ageDifMs);
 })();
