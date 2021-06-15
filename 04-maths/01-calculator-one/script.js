@@ -21,7 +21,7 @@ var num2 = document.getElementById("op-two").value;
             num1 = parseInt(document.getElementById("op-one"));
             num2= parseInt(document.getElementById("op-two"));
         }
-        eventlistener(addition(alert(num1 + num2)));
+        addition.eventlistener(addition(alert(num1 + num2)));
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
