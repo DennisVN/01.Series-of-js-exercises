@@ -22,4 +22,8 @@
     // TODO: CALCULATE THE DIFFERENCE BETWEEN NOW AND BIRTHDATE 
     var ageDifMs = Date.now() - birthday.getTime();
     console.log(ageDifMs);
+    var ageDate = new Date(ageDifMs);
+    console.log(ageDate);
+    var age = Math.abs(ageDate.getUTCFullYear() - 1970);
+    console.log(age);
 })();
