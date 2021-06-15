@@ -10,13 +10,18 @@
 // You will have time to focus on it later.
 var num1 = document.getElementById("op-one").value;
 var num2 = document.getElementById("op-two").value;
+var result;
 
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
 
     var performOperation = function(operation) {
         // perform the operation
-        return(alert(parseInt(+num1 + +num2)));
+        switch(operation) {
+            case "addition": result = +num1 + +num2;
+            break;
+        }
+        console.log(result);
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
