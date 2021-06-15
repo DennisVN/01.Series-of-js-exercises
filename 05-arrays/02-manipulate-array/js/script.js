@@ -25,5 +25,8 @@
     ];
 
     // your code here
+    run.onclick = function(){
+        console.log("knappe gast");
+    };
 
 })();
