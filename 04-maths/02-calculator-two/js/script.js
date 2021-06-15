@@ -20,6 +20,9 @@ var result;
         switch(operation) {
             case "addition": result = +num1 + +num2;
             break;
+
+            case "substraction": result = +num1 - +num2;
+            break;
         }
         console.log(result);
     };
