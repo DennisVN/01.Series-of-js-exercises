@@ -26,14 +26,10 @@
 
     // your code here
     run.onclick = function(){
-        //TODO: REMOVE THE FIRST AND LAST ELEMENT
         fruits.slice(1, -1);
         fruits.unshift("banana"); 
         fruits.push("kiwi");
         console.log(fruits);
-        ///WAAROM IS DIT EEN STRING ? ///
-
-        //TODO: ADD ELEMENT "kiwi" AT THE END 
     };
 
 })();
