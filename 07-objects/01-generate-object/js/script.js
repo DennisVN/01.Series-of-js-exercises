@@ -9,12 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 // DECLARE VARIABLES AND OBJECT
-var myObj = new Object();
-myObj.lastname = 'van Nieuwenhuyse';
-myObj.firstname = 'Dennis';
-myObj.age = '31';
-myObj.city = 'Antwerp';
-myObj.county = 'Belgium';
+var myObj = {
+    lastname : 'van Nieuwenhuyse',
+    firstname : 'Dennis',
+    age : '31',
+    city : 'Antwerp',
+    county : 'Belgium',
+};
 
 console.log([myObj]);
 
