@@ -22,5 +22,9 @@
     document.querySelector("img").addEventListener("mouseover", function(event) {
     console.log("scrolledy") //scroll over initiated; fix out
     })
+
+    document.querySelector("img").addEventListener("mouseout", function(event) {
+        console.log("bye") //scroll over initiated; fix out
+    })
     
 })();
