@@ -12,5 +12,10 @@
 (function() {
 
     // your code here
-
+    let oldImg = document.getElementById("source") ;
+    let oldImgValue = oldImg.getAttribute("data-image");
+    let newImg = document.createElement("newImg");
+    newImg.src = oldImgValue;
+    document.getElementById("target").appendChild(newImg);
+    oldImg.remove();
 })();
