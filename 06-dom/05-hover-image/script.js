@@ -12,5 +12,10 @@
 (function() {
 
     // your code here
+    function setNewImage (){
+        alert();
+    }
+    function setOldImage(){
 
+    }
 })();
