@@ -12,10 +12,15 @@
 (function() {
 
     // your code here
-    function setNewImage (){
-        alert();
-    }
-    function setOldImage(){
-
-    }
+    // keep mouseover and mouseout separated !
+    // change source from img to data-hover source ;)
+    // no reset needed
+    var imgSource = document.querySelector("img").getAttribute("src");
+    var newImgSource = document.querySelector("img").getAttribute("data-hover");
+    //console.log(imgSource);
+    //console.log(newImgSource); // why null tho ? 
+    document.querySelector("img").addEventListener("mouseover", function(event) {
+    console.log("scrolledy") //scroll over initiated; fix out
+    })
+    
 })();
