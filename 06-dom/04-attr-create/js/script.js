@@ -17,4 +17,5 @@
     let img = document.createElement("img");
     img.src = imgAttribute;
     document.getElementById("target").appendChild(img);
+    imgSource.remove();
 })();
