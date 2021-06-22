@@ -12,10 +12,9 @@
 (function() {
 
     // your code here
-    let oldImg = document.getElementById("source") ;
-    let oldImgValue = oldImg.getAttribute("data-image");
-    let newImg = document.createElement("newImg");
-    newImg.src = oldImgValue;
-    document.getElementById("target").appendChild(newImg);
-    oldImg.remove();
+    let imgSource = document.querySelector("#source");
+    let imgAttribute = imgSource.getAttribute("data-image");
+    let img = document.createElement("img");
+    img.src = imgAttribute;
+    document.getElementById("target").appendChild(img);
 })();
