@@ -16,10 +16,6 @@ var myObj = {
     city : 'Antwerp',
     county : 'Belgium',
 };
-
-console.log([myObj]);
-
-(() => {
-    // your code here
-    // THEN LOG HERE IN ARRAY 
-})();
+(run.onclick = () => {
+    console.log(myObj);
+});
