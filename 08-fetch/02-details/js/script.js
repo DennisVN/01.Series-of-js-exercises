@@ -14,18 +14,20 @@
 })();  */
 
 
-
-document.getElementById("run").addEventListener("click" , function(){
-    getObj = () => {
-        fetch('http://127.0.0.1:5500/_shared/api.json')
-        .then(response=> response.json())
-        .then(data => console.log(data));
-
-        .then()
-    }
-    getObj();
-});
-
 (() => {
-    // your code here
+    let target = document.querySelector("#target");
+    document.getElementById("run").addEventListener("click" , function hero() {
+    let inputId = document.getElementById("hero-id").value;
+
+        fetch("http://127.0.0.1:5500/_shared/api.json")
+            .then(response => response.json())
+            .then(data => {
+                let hero = data.heroes.find (findHero => findHero.id == inputId);
+                let objClone = document.getElementById("tpl-hero").content.cloneNode(true);
+                objClone.querySelector(".name").innerHTML = hero.name;
+                objClone.querySelector(".alter-ego").innerHTML = hero.alterEgo;
+                objClone.querySelector(".powers").innerHTML = hero.abilities;
+                target.appendChild(objClone);
+            })
+        }) 
 })();
