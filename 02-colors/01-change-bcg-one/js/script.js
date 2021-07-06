@@ -10,4 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("red").onclick = function() {
+        document.body.style.backgroundColor = "red";
+    }
 })();
