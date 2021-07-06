@@ -19,6 +19,10 @@
     }
     
     document.getElementById("yellow").onclick = function() {
-        document.body.style.backgroundColor = "yellow"
+        document.body.style.backgroundColor = "yellow";
+    }
+
+    document.getElementById("blue").onclick = function() {
+        document.body.style.backgroundColor = "blue";
     }
 })();

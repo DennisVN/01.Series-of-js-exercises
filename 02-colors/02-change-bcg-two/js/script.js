@@ -14,7 +14,11 @@
     // your code here
     
     //TODO: get the value of the input
-
+        
     //TODO: use value as background color. 
+    document.getElementById("color").onclick = function () {
+        let inputValue = document.getElementById("color").value;
+        document.body.style.backgroundColor = inputValue;
+    }
 
 })();
