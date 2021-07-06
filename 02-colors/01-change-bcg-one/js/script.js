@@ -13,4 +13,8 @@
     document.getElementById("red").onclick = function() {
         document.body.style.backgroundColor = "red";
     }
+
+    document.getElementById("green").onclick = function() {
+        document.body.style.backgroundColor = "green";
+    }
 })();
